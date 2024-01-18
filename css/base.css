@@ -1,0 +1,158 @@
+:root {
+    /* Fonts */
+    --font-primary: 'Roboto', Helvetica, sans-serif;
+    --font-headlines: 'Recoleta', 'Recoleta', Helvetica, sans-serif;
+    --font-headlines-black: 'Recoleta black', 'Recoleta', Helvetica, sans-serif;
+    --font-headlines-medium: 'Recoleta bold', 'Recoleta', Helvetica, sans-serif;
+    /* Colors */
+    --color-body-background: #09181B;
+    --color-top-background: #172427;
+    --color-summary-background: #94d090;
+    --color-background-lighter: #172427;
+    --color-background-lightest: #c6e2ea;
+    --color-button-background: #132427;
+    --color-button-border: #6cb066;
+    --color-text-primary: #c6e2ea;
+    --color-dropshadow: #030a0c;
+    --color-link-border: #99d5f6;
+    --color-link-border-shadow: #99d5f6;
+    --color-link-primary: #09181B;
+    /* Units */
+    --size-text-default: 1.3rem;
+    --size-text-small: 1rem;
+    --size-text-medium: 1.7rem;
+    --size-text-big: 6rem;
+    --size-text-title-mobile: 5.2rem;
+    --size-text-large: 2.5rem;
+    --size-text-xlarge: 3.33rem;
+    --card-border-radius: .2rem;
+    /* Reuse playground */
+    --color-text: var(--color-body-background);
+    --callout-text-color: var(--color-body-background);
+    --callout-text: var(--color-body-background);
+    --contact-card-border-color: var(--color-background-lightest);
+    --color-border-skill: var(--color-background-lightest);
+    --color-border-lightest: var(--color-background-lightest);
+    --work-area: #071112;
+    --work-border: var(--color-button-border);
+    --stuff-outline-color: var(--color-button-border);
+}
+/* CSS reset */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--color-text-primary);
+    font-family: var(--font-primary);
+    height: 100vh;
+    background-color: var(--color-body-background);
+    font-size: var(--size-text-small);
+}
+
+/* Make the selected text custom color */
+::selection {
+    background-color: var(--color-button-border);
+    color: var(--color-link-border);
+}
+
+body,
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
+
+h2 {
+    font-family: var(--font-headlines);
+    font-weight: 600;
+    font-size: var(--size-text-xlarge);
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-family: var(--font-headlines-medium);
+    font-weight: 600;
+    font-size: var(--size-text-large);
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-family: var(--font-headlines-medium);
+    font-weight: 400;
+    font-size: var(--size-text-medium);
+}
+
+p {
+    font-size: var(--size-text-default);
+    line-height: 140%;
+}
+
+ul {
+    font-size: var(--size-text-default);
+}
+
+a {
+    color: inherit;
+}
+
+a:not(.link-accent, .pressable-button, .link-accent-secondary):is(:hover, :focus) {
+    text-decoration-thickness: .25em;
+    text-decoration-color: var(--color-link-border);
+}
+
+a:not(.pressable-button):focus {
+    outline: 2px dashed var(--color-link-border);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a:is(:hover, :focus) {
+    text-decoration-thickness: 0.25em;
+    text-decoration-color: var(--color-link-primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.x-large {
+    display: block;
+    width: 85rem;
+    max-width: 97%;
+    margin: 0 auto;
+}
+.large {
+    display: block;
+    width: 75rem;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.full {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+}

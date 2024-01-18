@@ -1,0 +1,107 @@
+:root {
+    --background: #000000;
+    --letters: #81d289;
+    --background-light: #4CE0BE;
+
+    --border-color: #FFFFFF;
+    --border: 1px solid var(--border-color) / 20%;
+
+    --hyperplexed-main: red;
+    --hyperplexed-main-light: #4F4CE0;
+    --hyperplexed-secondary: #C356FC;
+
+    --card-size: 480px;
+    --font-size: 0.8rem;
+    --logo-size: calc(var(--card-size) * 0.3);
+}
+
+body {
+    background: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-track {
+    height: 100%;
+    width: var(--card-size);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    position: relative;
+    margin: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: none;
+}
+
+.card-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image > img {
+    width: var(--logo-size);
+}
+
+.card-gradient {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: radial-gradient(
+            var(--background-light) 40%,
+            var(--hyperplexed-main) 50%,
+            var(--hyperplexed-main-light),
+            var(--hyperplexed-secondary)
+    );
+    mix-blend-mode: darken;
+    pointer-events: none;
+}
+
+.card-letters {
+    --x: 0px;
+    --y: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    color: var(--letters);
+    font-size: var(--font-size);
+    font-weight: 500;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 400ms;
+    -webkit-mask-image: radial-gradient(
+            calc(var(--card-size) * 0.8) circle at var(--x) var(--y),
+            var(--letters) 20%,
+            var(--letters) 25%,
+            transparent
+    );
+    scale: 1.05;
+}
+
+.card:hover .card-letters {
+    opacity: 1;
+}

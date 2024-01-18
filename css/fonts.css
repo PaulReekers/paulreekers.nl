@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Roboto';
+    src:  local('Roboto'), url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  local('Roboto medium'), url('../fonts/Roboto-Medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src:  local('Roboto medium italic'), url('../fonts/Roboto-MediumItalic-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src:  local('Recoleta'), url('../fonts/Recoleta-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src:  local('Recoleta bold'), url('../fonts/Recoleta-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src:  local('Recoleta black'), url('../fonts/Recoleta-Black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
