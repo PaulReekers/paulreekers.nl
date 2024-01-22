@@ -223,6 +223,7 @@
     transform: rotateZ(-1deg);
     transition: transform .3s ease-out, background-color .35s, box-shadow .3s ease-out;
     color: var(--stuff-outline-color);
+    cursor: pointer;
 }
 
 .stuffs .stuff h3 {

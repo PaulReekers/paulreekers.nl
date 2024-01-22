@@ -79,9 +79,9 @@
                 <h2>About Me</h2>
                 <p>Hi there! I'm <strong>Paul Reekers</strong>, a dedicated <strong>ICT teacher</strong>
                     with experience in developing and guiding ICT projects.
-                    My career is driven by a passion for deliver <strong>creative solutions</strong><br>
+                    My career is driven by a passion to deliver <strong>creative media solutions</strong>
                     that help people and organizations to reach their fullest potential.</p>
-                <p>Continually <strong>experimenting</strong> to enhance my skills to expand my knowledge.</p>
+                <p>Always <strong>experimenting</strong> to expand my knowledge.</p>
                 <p>Love to keep an eye on the latest <strong>technological trends</strong>,
                     and finding ways to implement these techniques into my work,
                     ensuring that my students and projects stay at the forefront of the ICT industry.</p>
@@ -187,6 +187,11 @@
         </p>
     </footer>
     <script>
+        document.querySelectorAll('.stuff').forEach(function(item) {
+            item.addEventListener('click', function() {
+                window.location.href = this.querySelector('a').getAttribute('href');
+            });
+        });
         function submitForm() {
             // Get the first form with the name
             let frm = document.getElementsByName('contactform')[0];
