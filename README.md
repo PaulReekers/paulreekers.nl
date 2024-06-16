@@ -54,7 +54,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Paul Reekers - [paul@paulreekers.nl](mailto:paul@paulreekers.nl)
+Paul Reekers - [info@paulreekers.nl](mailto:info@paulreekers.nl)
 
 Feel free to reach out if you have any questions or suggestions!
 
