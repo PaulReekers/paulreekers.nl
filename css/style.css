@@ -209,6 +209,14 @@
     margin: 2rem auto 6rem;
 }
 
+.inspiration {
+    border-top: 2px solid var(--work-border);
+    border-bottom: 2px solid var(--work-border);
+    border-radius: 2px;
+    padding: 3rem 3rem;
+    position: relative;
+}
+
 .stuff {
     list-style-type: none;
     padding: 3rem 1.5rem;

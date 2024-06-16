@@ -100,12 +100,13 @@
                 </ul>
             </section>
         </div>
+
         <section class="work full" id="playground">
             <h2>Playground & Creative Experiments</h2>
 
             <ul class="stuffs xx-large">
                 <!-- Add playground here -->
-                <li class="stuff">
+                <li class="stuff project">
                     <h3>Hover Effect with svg image</h3>
                     <div>
                         <p>A recreation of an insane hover effect.</p>
@@ -116,6 +117,27 @@
 
             </ul>
         </section>
+
+        <section class="inspiration full" id="inspiration">
+            <h2>Inspiration</h2>
+
+            <ul class="stuffs xx-large">
+                <li class="stuff website">
+                    <h3>Add of the world</h3>
+                    <div>
+                        <p>Highlighted Campaigns • Ads of the World™</p>
+                        <p>
+                            Ads of the World (AOTW for short) is part of the Clio Network of sites that celebrates creativity, inspires a
+                            competitive marketplace of ideas, and fosters meaningful connections within the creative community. On AOTW we feature an ever-growing advertising campaign database, a customizable watchlist, bookmarks, and personal profiles so you can find the work that inspires you.
+                        </p>
+
+                        <p><a href="https://www.adsoftheworld.com/" target="_blank">adsoftheworld.com</a></p>
+                    </div>
+                </li><!-- Add Inspiration here -->
+
+            </ul>
+        </section>
+
         <section class="large" id="contact">
             <form action="https://formspree.io/f/xwkjqkae" method="POST" class="validate" target="_self" name="contactform">
                 <div>
@@ -150,6 +172,7 @@
                 </div>
             </form>
         </section>
+
     </main>
 
     <footer class="footer">
@@ -182,9 +205,17 @@
         </p>
     </footer>
     <script>
-        document.querySelectorAll('.stuff').forEach(function(item) {
+        document.querySelectorAll('.project').forEach(function(item) {
             item.addEventListener('click', function() {
                 window.location.href = this.querySelector('a').getAttribute('href');
+            });
+        });
+        document.querySelectorAll('.website').forEach(function (item) {
+            item.addEventListener('click', function () {
+                const link = this.querySelector('a');
+                if (link) {
+                    window.open(link.getAttribute('href'), '_blank');
+                }
             });
         });
         function submitForm() {
