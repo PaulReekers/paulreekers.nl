@@ -1,7 +1,7 @@
 # paulreekers.nl
 Playground &amp; Creative Experiments
 
-Welcome to the repository for [paulreekers.nl](https://paulreekers.nl), the personal website of Paul Reekers. This project is designed to showcase my portfolio, Inspiration and other professional information.
+Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](https://paulreekers.nl), The Netherlands. Here you can find projects I have created or other stuff that, I think, are worthy putting on the internet (so basically everything ;) ).
 
 ## Table of Contents
 
@@ -14,12 +14,14 @@ Welcome to the repository for [paulreekers.nl](https://paulreekers.nl), the pers
 
 ## About
 
-This website is built using modern web technologies to provide a responsive and interactive experience. It includes sections for my portfolio, blog, and a contact form.
+Hi there! I'm Paul Reekers!
+
+Welcome at my electronic headquarters operating from The Netherlands. I'm a teacher, media designer and developer. I love to coach, teach and share knowledge with others. I'm also a certified Agile coach, Scrum Master, and Product Owner.
 
 ## Features
 
 - **Responsive Design**: Optimized for both desktop and mobile devices.
-- **Playground**: Showcases my projects with detailed descriptions and links.
+- **Playground**: Showcases projects with a bit of description.
 - **Inspiration**: Highlights websites that I find interesting.
 - **Contact Form**: Allows visitors to get in touch with me directly.
 
@@ -45,7 +47,7 @@ To get a local copy up and running, follow these steps:
 To run the website locally, use the following command:
 
 ```sh
-npm start
+    npm start
 ```
 
 ## License
