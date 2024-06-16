@@ -1,7 +1,7 @@
 # paulreekers.nl
 Playground &amp; Creative Experiments
 
-Welcome to the repository for [paulreekers.nl](https://paulreekers.nl), the personal website of Paul Reekers. This project is designed to showcase my portfolio, blog, and other professional information.
+Welcome to the repository for [paulreekers.nl](https://paulreekers.nl), the personal website of Paul Reekers. This project is designed to showcase my portfolio, Inspiration and other professional information.
 
 ## Table of Contents
 
@@ -9,7 +9,6 @@ Welcome to the repository for [paulreekers.nl](https://paulreekers.nl), the pers
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
