@@ -195,7 +195,23 @@
     position: relative;
 }
 
-.work h2 {
+.website h2 {
+    text-align: center;
+    max-width: 50rem;
+    margin: 3rem auto 6rem auto;
+}
+
+.website {
+    margin-top: 3rem;
+    background-color: var(--work-area);
+    border-top: 2px solid var(--work-border);
+    border-bottom: 2px solid var(--work-border);
+    border-radius: 2px;
+    padding: 1rem 3rem;
+    position: relative;
+}
+
+.website h2 {
     text-align: center;
     max-width: 50rem;
     margin: 3rem auto 6rem auto;
