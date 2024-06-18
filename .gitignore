@@ -5,6 +5,9 @@ node_modules/
 # Vite dependencies
 node_modules/.vite/deps/
 
+# Build output
+dist/
+
 # Optional npm cache directory
 .npm
 
