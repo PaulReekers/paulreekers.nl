@@ -2,6 +2,8 @@
 
 # Dependency directories
 node_modules/
+# Vite dependencies
+node_modules/.vite/deps/
 
 # Optional npm cache directory
 .npm
