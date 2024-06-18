@@ -3,5 +3,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite-plugin-windicss": "^1.9.3"
   }
 }

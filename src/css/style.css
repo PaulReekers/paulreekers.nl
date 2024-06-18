@@ -217,7 +217,7 @@
     margin: 3rem auto 6rem auto;
 }
 
-.work .stuffs {
+.stuffs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     column-gap: 3rem;
@@ -275,7 +275,7 @@
     transform: rotateZ(1deg);
 }
 
-.work .stuffs .stuff:hover {
+.stuffs .stuff:hover {
     transform: rotateZ(0);
     background-color: var(--color-button-background);
     box-shadow: 1px 1px 0 0 var(--stuff-outline-color),
@@ -498,7 +498,7 @@
         border-top: none;
         border-bottom: 0;
         border-right: none;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     #main-navigation ul li:nth-child(3) {
         display: none;
@@ -532,40 +532,40 @@
         padding-top: 3.33rem;
     }
 
-    .work {
+    .work, .inspiration {
         padding: 2rem 0;
     }
 
-    .work h2 {
+    .work h2, .inspiration h2 {
         padding-left: 1.5rem;
         padding-bottom: 0;
         background-image: none;
         text-align: left;
         margin-bottom: 0;
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
-    .work .stuffs {
+    .stuffs {
         row-gap: 0;
         grid-template-columns: 1fr;
     }
 
-    .work .stuffs .stuff {
+    .stuffs .stuff {
         grid-template-columns: 1fr;
         border: none;
         box-shadow: none;
         transform: rotateZ(0) !important;
         border-radius: 0;
     }
-    .work .stuffs .stuff:hover {
+    .stuffs .stuff:hover {
         box-shadow: none;
     }
 
-   .work .stuffs .stuff h3 {
+   .stuffs .stuff h3 {
         font-size: var(--size-text-large);
     }
 
-    .work .stuffs .stuff a:focus::after {
+    .stuffs .stuff a:focus::after {
         border-radius: 0;
         height: calc(100% + 2px);
         top: -1px;

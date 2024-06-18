@@ -44,7 +44,5 @@ document
       // Clear any existing custom validity messages
       email.setCustomValidity("");
       textarea.setCustomValidity("");
-
-      // The form will be submitted naturally, and you can reset it afterward if needed.
     }
   });
