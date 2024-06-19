@@ -38,7 +38,7 @@ jobs:
       - name: Sync files to host
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ftp.paulreekers.nl
+          server: 37.97.227.119
           username: paulreekers
           password: $ {{ secrets.FTP_WACHTWOORD }}
           local-dir: dist/
