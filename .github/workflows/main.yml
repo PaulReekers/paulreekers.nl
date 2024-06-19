@@ -38,8 +38,8 @@ jobs:
       - name: Sync files to host
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: 37.97.227.119
-          username: paulreekers
+          server: ${{ secrets.FTP_SERVER }}
+          ftp-username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_WACHTWOORD }}
           local-dir: dist/
           server-dir: httpdocs/
