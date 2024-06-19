@@ -1,45 +1,45 @@
 name: name-of-deployment-action e.g. deploy mysite
 
-        on:
-          push:
-            branches: [main]
-          workflow_dispatch:
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
 
-        jobs:
-          build:
-            
-            name: Build 🛠️
-            runs-on: ubuntu-latest
-            steps:
-              - name: checkout repository
-                uses: actions/checkout@main
-              - name: Installing project dependencies
-                run: npm ci
-              - name: Build Dependencies
-                run: npm run build
-              - name: Archive production artifact
-                uses: actions/upload-artifact@main 
-                with:
-                  name: dist
-                  path: dist
+jobs:
+  build:
+    
+    name: Build 🛠️
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@main
+      - name: Installing project dependencies
+        run: npm ci
+      - name: Build Dependencies
+        run: npm run build
+      - name: Archive production artifact
+        uses: actions/upload-artifact@main 
+        with:
+          name: dist
+          path: dist
 
-          deploy: 
-            name: Deploy 🦄
-            needs: build
-            runs-on: ubuntu-latest
-            steps:
-              - name: checkout repository
-                uses: actions/checkout@main
-              - name: Download artifact
-                uses: actions/download-artifact@main
-                with:
-                  name: dist
-                  path: dist
-              - name: Sync files to host
-                uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-                with:
-                  server: https://server.markand.nl:8443/
-                  username: paulreekers
-                  password: $ {{ secrets.FTP_WACHTWOORD }}
-                  local-dir: dist/
-                  server-dir: httpdocs/
+  deploy: 
+    name: Deploy 🦄
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@main
+      - name: Download artifact
+        uses: actions/download-artifact@main
+        with:
+          name: dist
+          path: dist
+      - name: Sync files to host
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: https://server.markand.nl:8443/
+          username: paulreekers
+          password: $ {{ secrets.FTP_WACHTWOORD }}
+          local-dir: dist/
+          server-dir: httpdocs/
