@@ -1,4 +1,4 @@
-name: Build and deploy for paulreekers.nl
+name: 🚀 Build and deploy for paulreekers.nl
 
 on:
   push:
@@ -8,35 +8,35 @@ on:
 jobs:
   build:
     
-    name: Build 🔨
+    name: 🔨 Build 
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: 🚚 checkout repository
         uses: actions/checkout@main
-      - name: Installing project dependencies
+      - name: 🛠️📦 Installing project dependencies
         run: npm ci
-      - name: Build Dependencies
+      - name: 🏗️📦 Build Dependencies
         run: npm run build
-      - name: Archive production artifact
+      - name: 🗿📦 Archive production artifact
         uses: actions/upload-artifact@main 
         with:
           name: dist
           path: dist
 
   deploy: 
-    name: Deploy 🚀
+    name: 🎉 Deploy
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: 🚚 Get latest code
         uses: actions/checkout@main
-      - name: Download artifact
+      - name: 🗿 Download artifact
         uses: actions/download-artifact@main
         with:
           name: dist
           path: dist
-      - name: Sync files to host
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      - name: 📂 Sync files to host
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
