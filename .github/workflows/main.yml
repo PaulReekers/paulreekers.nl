@@ -1,4 +1,4 @@
-name: deploy to paulreekers.nl
+name: Build and deploy for paulreekers.nl
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     
-    name: Build 🛠️
+    name: Build 🔨
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
@@ -24,7 +24,7 @@ jobs:
           path: dist
 
   deploy: 
-    name: Deploy 🦄
+    name: Deploy 🚀
     needs: build
     runs-on: ubuntu-latest
     steps:
