@@ -1,4 +1,4 @@
-name: name-of-deployment-action e.g. deploy mysite
+name: deploy to paulreekers.nl
 
 on:
   push:
