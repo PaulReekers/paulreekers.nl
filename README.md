@@ -1,4 +1,5 @@
 # paulreekers.nl
+[![🚀 Build and deploy for paulreekers.nl](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml)
 Playground &amp; Creative Experiments
 
 Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](https://paulreekers.nl), The Netherlands. Here you can find projects I have created or other stuff that, I think, are worthy putting on the internet (so basically everything ;) ).
