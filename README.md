@@ -2,14 +2,14 @@
 [![🚀 Build and deploy for paulreekers.nl](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml)
 Playground &amp; Creative Experiments
 
-Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](https://paulreekers.nl), The Netherlands. Here you can find projects I have created or other stuff that, I think, are worthy putting on the internet (so basically everything ;) ).
-
 ## Table of Contents
 
 - [About](#about)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Scripts](#scripts)
+- [Folder Structure](#FolderStructure)
 - [License](#license)
 - [Contact](#contact)
 
@@ -17,7 +17,7 @@ Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](ht
 
 Hi there! I'm Paul Reekers!
 
-Welcome at my electronic headquarters operating from The Netherlands. I'm a teacher, media designer and developer. I love to coach, teach and share knowledge with others. I'm also a certified Agile coach, Scrum Master, and Product Owner.
+Welcome at my electronic headquarters operating from [paulreekers.nl](https://paulreekers.nl), The Netherlands. I'm a teacher, media designer and developer. I love to coach, teach and share knowledge with others. I'm also a certified Agile coach, Scrum Master, and Product Owner.
 
 ## Features
 
@@ -45,11 +45,46 @@ To get a local copy up and running, follow these steps:
 
 ## Usage
 
+### Development
 To run the website locally, use the following command:
+```sh
+    npm run dev
+```
+The app will be available at http://localhost:5173.
+
+### Production
+To create a production build, run:
 
 ```sh
-    npm start
+   npm run build
 ```
+The output will be in the dist directory.
+
+### Preview
+To preview the production build, run:
+```sh
+   npm run preview
+```
+## Scripts
+
+npm run dev: Starts the development server.
+npm run build: Builds the app for production.
+npm run preview: Previews the production build.
+
+## Folder Structure
+
+.
+├── dist             # Static files
+├── src              # Source files
+│   ├── css          # styles
+│   ├── favicon      # Icons
+│   ├── fonts        # Fonts
+│   ├── playground   # Experiments
+│   └── main.js      # Entry point
+├── index.html       # Main HTML file
+├── package.json     # Project metadata and dependencies
+└── vite.config.js   # Vite configuration
+
 
 ## License
 

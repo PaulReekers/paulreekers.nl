@@ -1,4 +1,4 @@
-import "../css/style.css"; // relative path to the CSS file
+import "./css/style.css"; // relative path to the CSS file
 
 document.querySelectorAll(".project, .website").forEach(function (item) {
   item.addEventListener("click", function () {
