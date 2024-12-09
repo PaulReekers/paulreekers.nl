@@ -1,5 +1,64 @@
-# Vue 3 + Vite
+# paulreekers.nl
+[![🚀 Build and deploy for paulreekers.nl](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/PaulReekers/paulreekers.nl/actions/workflows/main.yml)
+Playground &amp; Creative Experiments
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](https://paulreekers.nl), The Netherlands. Here you can find projects I have created or other stuff that, I think, are worthy putting on the internet (so basically everything ;) ).
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
+
+## About
+
+Hi there! I'm Paul Reekers!
+
+Welcome at my electronic headquarters operating from The Netherlands. I'm a teacher, media designer and developer. I love to coach, teach and share knowledge with others. I'm also a certified Agile coach, Scrum Master, and Product Owner.
+
+## Features
+
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Playground**: Showcases projects with a bit of description.
+- **Inspiration**: Highlights websites that I find interesting.
+- **Contact Form**: Allows visitors to get in touch with me directly.
+
+## Installation
+
+To get a local copy up and running, follow these steps:
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/PaulReekers/paulreekers.nl.git
+    ```
+2. **Navigate to the project directory**:
+    ```sh
+    cd paulreekers.nl
+    ```
+3. **Install dependencies**:
+    ```sh
+    npm install
+    ```
+
+## Usage
+
+To run the website locally, use the following command:
+
+```sh
+    npm start
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Paul Reekers - [info@paulreekers.nl](mailto:info@paulreekers.nl)
+
+Feel free to reach out if you have any questions or suggestions!
+
+Thanks for checking out my website project! If you have any feedback or run into any issues, don't hesitate to open an issue or contact me directly.
