@@ -1,13 +1,7 @@
-import { defineConfig } from "vite";
-import WindiCSS from "vite-plugin-windicss";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
+// https://vite.dev/config/
 export default defineConfig({
-  //base: "./", // Set the base path for your project
-  root: ".",
-  plugins: [WindiCSS()],
-  server: {
-    watch: {
-      usePolling: true,
-    },
-  },
-});
+  plugins: [vue()],
+})
