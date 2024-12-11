@@ -20,8 +20,8 @@ export default {
   components: {
     MetaInfo,
     NavBar,
+    Home,
     Footer,
-    Home
   }
 }
 </script>

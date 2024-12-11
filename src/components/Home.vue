@@ -1,7 +1,5 @@
 <template>
   <div>
-    <MetaInfo />
-    <NavBar />
     <main id="home">
       <div class="intro-wrapper">
         <div id="intro" class="full">
@@ -24,7 +22,6 @@
       <Inspiration />
       <Contact />
     </main>
-    <Footer />
   </div>
 </template>
 
@@ -39,7 +36,7 @@ import Footer from "./Footer.vue";
 
 export default {
   name: 'Home',
-  components: {MetaInfo, NavBar, AboutMe, Playground, Inspiration, Contact, Footer}
+  components: {AboutMe, Playground, Inspiration, Contact}
 }
 </script>
 
