@@ -1,31 +1,53 @@
-name: Deploy to FTP
+name: 🚀 Build and deploy to FTP
 
 on:
   push:
-    branches:
-      - main # Change this to your main branch
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  ftp-deploy:
+  build:
+    name: 🔨 Build
     runs-on: ubuntu-latest
-
     steps:
-    # Step 1: Checkout the code
-    - name: Checkout Repository
-      uses: actions/checkout@v3
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v2
 
-    # Step 2: Deploy files via FTP
-    - name: Deploy to FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        port: ${{ secrets.FTP_PORT || '21' }} # Default FTP port is 21
-        local-dir: ./ # The root directory of your repository
-        server-dir: ${{ secrets.FTP_PATH || '/' }} # Optional remote directory
-        exclude: |
-          .git*
-          node_modules
-          *.log
-          .env
+      - name: 🛠️ Install dependencies
+        run: npm ci
+
+      - name: 🏗️ Build project
+        run: npm run build
+
+      - name: 🗿 Archive production artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    name: 🎉 Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v2
+
+      - name: 🗿 Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: 📂 List files in dist directory
+        run: ls -la dist
+
+      - name: 📂 Sync files to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_WACHTWOORD }}
+          local-dir: dist/
+          server-dir: httpdocs/
