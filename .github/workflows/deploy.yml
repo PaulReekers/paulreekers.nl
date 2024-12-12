@@ -1,0 +1,53 @@
+name: 🚀 Build and deploy to FTP
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: 🔨 Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v2
+
+      - name: 🛠️ Install dependencies
+        run: npm ci
+
+      - name: 🏗️ Build project
+        run: npm run build
+
+      - name: 🗿 Archive production artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+  deploy:
+    name: 🎉 Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Checkout repository
+        uses: actions/checkout@v2
+
+      - name: 🗿 Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: 📂 List files in dist directory
+        run: ls -la dist
+
+      - name: 📂 Sync files to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/
+          server-dir: httpdocs/
