@@ -3,7 +3,7 @@
     <main id="home">
       <div class="intro-wrapper">
         <div id="intro" class="full">
-          <h1 class="shadow-letters">Paul Reekers1</h1>
+          <h1 class="shadow-letters">Paul Reekers</h1>
           <div id="about" class="large">
             <p>I'm an experienced teacher, media developer, coach <br> and Product Owner.</p>
             <p><a href="#aboutMe" class="link">About me</a> / <a href="#playground" class="link">Playground</a></p>
