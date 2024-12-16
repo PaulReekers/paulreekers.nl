@@ -56,7 +56,7 @@ html {
 body {
     box-sizing: border-box;
     color: var(--color-text-primary);
-    font-family: var(--font-primary);
+    font-family: var(--font-primary), serif;
     height: 100vh;
     background-color: var(--color-body-background);
     font-size: var(--size-text-small);
@@ -77,21 +77,21 @@ h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 h2 {
-    font-family: var(--font-headlines);
+    font-family: var(--font-headlines), sans-serif;
     font-weight: 600;
     font-size: var(--size-text-xlarge);
     margin-bottom: 1rem;
 }
 
 h3 {
-    font-family: var(--font-headlines-medium);
+    font-family: var(--font-headlines-medium), sans-serif;
     font-weight: 600;
     font-size: var(--size-text-large);
     margin-bottom: 1rem;
 }
 
 h4 {
-    font-family: var(--font-headlines-medium);
+    font-family: var(--font-headlines-medium), sans-serif;
     font-weight: 400;
     font-size: var(--size-text-medium);
 }
