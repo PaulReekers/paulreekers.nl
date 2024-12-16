@@ -159,7 +159,7 @@
 
 .about-details {
     margin: 0 auto;
-    padding: 6rem 1rem 1rem;
+    padding: 3rem 1rem 1rem;
 }
 
 .about-details > p {
@@ -219,10 +219,9 @@
 }
 
 .inspiration {
-    border-top: 2px solid var(--work-border);
     border-bottom: 2px solid var(--work-border);
     border-radius: 2px;
-    padding: 3rem 3rem;
+    padding: 1rem 3rem;
     position: relative;
 }
 
@@ -332,13 +331,12 @@
 .footer {
     background-color: var(--color-background-lighter);
     border-top: 2px solid var(--color-border-lightest);
-    padding-top: 5rem;
-    margin-top: 3rem;
+    padding-top: 2rem;
 }
 
 .footer .about-summary {
-    padding: 0 0 4rem 0;
-   display: flex;
+    padding: 0;
+    display: flex;
     justify-content: space-between;
     width: 70rem;
     max-width: 97%;
@@ -348,6 +346,7 @@
 .footer .about-summary h2 {
     text-shadow: 0.25rem 0.25rem var(--color-dropshadow);
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .footer .about-summary .explanation {
@@ -355,7 +354,7 @@
     padding-left: 2rem;
     font-size: var(--size-text-medium);
     color: var(--color-text-primary);
-    margin-top: .5rem;
+    margin-top: 1.4rem;
 }
 
 .footer .socials {
@@ -376,9 +375,14 @@
 */
 @media screen and (min-width:70rem) {
     .work h2,
+    .inspiration h2{
+        padding-bottom: 1rem;
+    }
+    .work h2,
     .inspiration h2,
     .stuffs{
         width: 70rem;
+        margin: auto;
     }
     .footer .socials {
         justify-content: center;

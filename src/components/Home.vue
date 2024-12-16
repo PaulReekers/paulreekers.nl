@@ -39,7 +39,3 @@ export default {
   components: {AboutMe, Playground, Inspiration, Contact}
 }
 </script>
-
-<style scoped>
-@import '../assets/css/style.css';
-</style>
