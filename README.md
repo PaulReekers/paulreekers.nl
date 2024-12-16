@@ -58,8 +58,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Paul Reekers - [info@paulreekers.nl](mailto:info@paulreekers.nl)
-
 Feel free to reach out if you have any questions or suggestions!
 
 Thanks for checking out my website project! If you have any feedback or run into any issues, don't hesitate to open an issue or contact me directly.
