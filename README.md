@@ -16,7 +16,7 @@ Welcome Welcome at my electronic headquarters operating from [paulreekers.nl](ht
 
 ## About
 
-Hi there! I'm Paul Reekers!
+Hi there! I'm Paul!
 
 Welcome at my electronic headquarters operating from The Netherlands. I'm a teacher, media designer and developer. I love to coach, teach and share knowledge with others. I'm also a certified Agile coach, Scrum Master, and Product Owner.
 
