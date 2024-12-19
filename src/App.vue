@@ -10,18 +10,18 @@
 </template>
 
 <script>
-import MetaInfo from './components/MetaInfo.vue';
-import NavBar from './components/NavBar.vue';
-import Footer from './components/Footer.vue';
-import Home from './components/Home.vue';
+import MetaInfo from "./components/MetaInfo.vue";
+import NavBar from "./components/NavBar.vue";
+import Footer from "./components/Footer.vue";
+import Home from "./components/Home.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     MetaInfo,
     NavBar,
     Home,
     Footer,
-  }
-}
+  },
+};
 </script>

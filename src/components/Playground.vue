@@ -6,21 +6,9 @@
         <h3>Hover Effect with svg image</h3>
         <div>
           <p>A recreation of an insane hover effect.</p>
-          <p><a href="/src/playground/hovereffect/" target="_self">Show me</a></p>
-        </div>
-      </li>
-      <li class="stuff project">
-        <h3>Hover Effect with svg image</h3>
-        <div>
-          <p>A recreation of an insane hover effect.</p>
-          <p><a href="/src/playground/hovereffect/" target="_self">Show me</a></p>
-        </div>
-      </li>
-      <li class="stuff project">
-        <h3>Hover Effect with svg image</h3>
-        <div>
-          <p>A recreation of an insane hover effect.</p>
-          <p><a href="/src/playground/hovereffect/" target="_self">Show me</a></p>
+          <p>
+            <a href="/src/playground/hovereffect/" target="_self">Show me</a>
+          </p>
         </div>
       </li>
     </ul>
@@ -29,6 +17,6 @@
 
 <script>
 export default {
-  name: 'Playground'
-}
+  name: "Playground",
+};
 </script>
