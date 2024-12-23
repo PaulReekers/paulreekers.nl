@@ -191,7 +191,7 @@
     border-top: 2px solid var(--work-border);
     border-bottom: 2px solid var(--work-border);
     border-radius: 2px;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 3rem;
     position: relative;
 }
 
@@ -221,7 +221,7 @@
 .inspiration {
     border-bottom: 2px solid var(--work-border);
     border-radius: 2px;
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 3rem;
     position: relative;
 }
 
@@ -381,7 +381,7 @@
     .work h2,
     .inspiration h2,
     .stuffs{
-        width: 70rem;
+        /*width: 70rem;*/
         margin: auto;
     }
     .footer .socials {
@@ -422,8 +422,10 @@
         max-width: 90%
     }
 
-   .work {
-        margin-top: 3rem
+   .work,
+   .inspiration{
+       margin-top: 3rem;
+       padding-bottom: 0;
     }
 }
 
