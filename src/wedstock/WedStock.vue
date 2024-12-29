@@ -1,5 +1,5 @@
 <template>
-  <section class="large" id="contact">
+  <section class="large" id="wedstock">
     <form
         action="https://formspree.io/f/xwkjqkae"
         method="POST"
@@ -45,8 +45,10 @@
 </template>
 
 <script>
+import './WedStock.css';
+
 export default {
-  name: "ContactForm",
+  name: "WedStock",
 };
 </script>
 
