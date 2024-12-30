@@ -28,7 +28,7 @@ export default {
         {
           property: "og:title",
           content:
-            "Paul Reekers - Teacher, Web Developer, Agile Expert & Certified Scrum Professional",
+            "Paul Reekers - Teacher, Web Developer, Agile Expert & Certified Scrum Professional.",
         },
         { property: "og:type", content: "website" },
         { property: "og:url", content: "https://www.paulreekers.nl/" },
