@@ -11,6 +11,15 @@
           </p>
         </div>
       </li>
+      <li class="stuff project">
+        <h3>Old Snake Game</h3>
+        <div>
+          <p>A recreation of an old snake game.</p>
+          <p>
+            <a href="/src/playground/snake/" target="_self">Show me</a>
+          </p>
+        </div>
+      </li>
     </ul>
   </section>
 </template>
