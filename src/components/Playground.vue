@@ -7,7 +7,7 @@
         <div>
           <p>A recreation of an insane hover effect.</p>
           <p>
-            <a href="/src/playground/hovereffect/" target="_self">Show me</a>
+            <a href="/playground/hovereffect/" target="_self">Show me</a>
           </p>
         </div>
       </li>
@@ -16,7 +16,7 @@
         <div>
           <p>A recreation of an old snake game.</p>
           <p>
-            <a href="/src/playground/snake/" target="_self">Show me</a>
+            <a href="/playground/snake/" target="_self">Show me</a>
           </p>
         </div>
       </li>
