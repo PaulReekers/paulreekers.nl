@@ -2,19 +2,14 @@
   <section class="inspiration full" id="inspiration">
     <h2>Inspiration</h2>
     <ul class="stuffs xx-large">
-      <li
-        class="stuff website"
-        ref="websites"
-        v-for="(item, index) in items"
-        :key="index"
-      >
-        <h3>{{ item.title }}</h3>
-        <div>
-          <p v-html="item.description"></p>
-          <p>
-            <a :href="item.url" target="_blank">{{ item.url }}</a>
-          </p>
-        </div>
+      <li class="stuff website" v-for="(item, index) in items" :key="index">
+        <a :href="item.url" target="_blank" class="full-link">
+          <h3>{{ item.title }}</h3>
+          <div>
+            <p v-html="item.description"></p>
+            <p>{{ item.url }}</p>
+          </div>
+        </a>
       </li>
     </ul>
   </section>
@@ -27,9 +22,9 @@ export default {
     return {
       items: [
         {
-          title: "Add of the world",
+          title: "Ads of the World",
           description:
-            "Highlighted Campaigns <br><br> Ads of the World Ads of the World (AOTW for short) is part of the Clio Network of sites that celebrates creativity, inspires a competitive marketplace of ideas, and fosters meaningful connections within the creative community. <br>On AOTW we feature an ever-growing advertising campaign database, a customizable watchlist, bookmarks, and personal profiles so you can find the work that inspires you.",
+            "Highlighted Campaigns <br><br> Ads of the World (AOTW for short) is part of the Clio Network of sites that celebrates creativity, inspires a competitive marketplace of ideas, and fosters meaningful connections within the creative community. <br>On AOTW we feature an ever-growing advertising campaign database, a customizable watchlist, bookmarks, and personal profiles so you can find the work that inspires you.",
           url: "https://www.adsoftheworld.com/",
         },
         {
@@ -42,12 +37,28 @@ export default {
     };
   },
   mounted() {
-    this.$refs.websites.forEach((website, index) => {
-      website.addEventListener("click", () => {
-        const url = this.items[index].url;
-        window.open(url, "_blank");
+    this.addClickListeners();
+  },
+  methods: {
+    addClickListeners() {
+      this.$refs.websites.forEach((website, index) => {
+        website.addEventListener("click", () => {
+          this.openUrl(index);
+        });
       });
-    });
+    },
+    openUrl(index) {
+      const url = this.items[index].url;
+      window.open(url, "_blank");
+    },
   },
 };
 </script>
+
+<style scoped>
+.full-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+</style>
