@@ -3,16 +3,16 @@
     <h2>Playground</h2>
     <ul class="stuffs xx-large">
       <li
-        v-for="(project, index) in projects"
-        :key="project.name"
-        class="stuff project"
-        ref="projects"
+          v-for="(project, index) in projects"
+          :key="project.name"
+          class="stuff project"
+          @click="openUrl(project.link)"
       >
         <h3>{{ project.title }}</h3>
         <div>
           <p>{{ project.description }}</p>
           <p>
-            <a :href="project.link" target="_blank">Show me</a>
+            <a :href="project.link" target="_blank" @click.stop>Show me</a>
           </p>
         </div>
       </li>
@@ -41,19 +41,8 @@ export default {
       ],
     };
   },
-  mounted() {
-    this.addClickListeners();
-  },
   methods: {
-    addClickListeners() {
-      this.$refs.projects.forEach((project, index) => {
-        project.addEventListener("click", () => {
-          this.openUrl(index);
-        });
-      });
-    },
-    openUrl(index) {
-      const url = this.projects[index].link;
+    openUrl(url) {
       window.open(url, "_blank");
     },
   },
